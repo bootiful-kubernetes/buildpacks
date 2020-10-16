@@ -16,7 +16,7 @@ app = Sanic('greetings-service')
 
 @app.route("/")
 async def test(request):
-    return json({"hello": "world"})
+    return json({"greetings": "Hello, world!"})
 
 
 if __name__ == "__main__":
