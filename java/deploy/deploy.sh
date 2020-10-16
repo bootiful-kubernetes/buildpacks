@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #alias k=kubectl
-APP_NAME=hello
+APP_NAME=java-hello
 PROJECT_ID=${GKE_PROJECT:-pgtm-jlong}
 
 cd $(dirname $0)/..

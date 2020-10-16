@@ -11,9 +11,9 @@ import java.util.Map;
 @SpringBootApplication
 public class HelloApplication {
 
-	@GetMapping("/hello")
+	@GetMapping("/")
 	Map<String, String> hello() {
-		return Map.of("greetings", "Hello, world!");
+		return Map.of("greetings", "Hello, Java!");
 	}
 
 	public static void main(String[] args) {
