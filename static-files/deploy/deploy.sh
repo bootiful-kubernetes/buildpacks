@@ -15,7 +15,7 @@ docker push gcr.io/${PROJECT_ID}/${APP_NAME}
 docker pull gcr.io/${PROJECT_ID}/${APP_NAME}:latest
 
 
-kubectl apply -f deployment.yaml 
+kubectl apply -f ${root_dir}/deploy/deployment.yaml 
 kubectl expose deployment ${APP_NAME} --port=80 --target-port=8080 --name=${APP_NAME} --type=LoadBalancer
 
 # this works! 
