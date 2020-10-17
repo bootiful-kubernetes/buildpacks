@@ -58,5 +58,11 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           ./java/deploy/deploy.sh
+          
           cd $GITHUB_WORKSPACE
           ./python/deploy/deploy.sh
+
+          cd $GITHUB_WORKSPACE
+          ./nodejs/deploy/deploy.sh
+          
+
