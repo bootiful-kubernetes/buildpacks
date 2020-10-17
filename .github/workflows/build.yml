@@ -64,4 +64,6 @@ jobs:
           cd $GITHUB_WORKSPACE
           ./nodejs/deploy/deploy.sh
           
+          cd $GITHUB_WORKSPACE
+          ./static-files/deploy/deploy.sh
 
