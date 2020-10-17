@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hello-nginx
+  name: hello-nginx
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-nginx
+  template:
+    metadata:
+      labels:
+        app: hello-nginx
+    spec:
+      containers:
+        - image: gcr.io/pgtm-jlong/hello-nginx
+          imagePullPolicy: Always
+          name: hello-nginx
+          env:
+            - name: PORT
+              value: "8080"
